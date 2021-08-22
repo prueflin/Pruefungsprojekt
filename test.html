@@ -1,0 +1,111 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name=description content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Tables – Tabellen mit CSS umstrukturieren</title>
+<style>
+
+* {
+	box-sizing:border-box;
+}
+
+table {
+	width:100%;
+}
+
+table, td, tr, th {
+	border:2px solid black;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+td, tr, th {
+	padding:1em;
+}
+
+th {
+	background:#eee;
+	font-weight: bold;
+}
+
+.abb {float:left; width=100%;}
+.leg {float:right; width=100%;}
+
+@media screen and (max-width:564px) {
+	table, tr, td {
+		padding:0;
+		border:1px solid black;
+	}
+
+	table {
+		border:none;
+	}
+
+	thead {
+		display:none;
+	}
+
+	tr {
+		float: left;
+		width: 100%;
+		margin-bottom: 1em;
+	}
+
+	td {
+		float: left;
+		width: 100%;
+		padding:1em;
+	}
+
+/*	td::before {
+		content:attr(data-label);
+		word-wrap: break-word;
+		background: #eee;
+		border-right:2px solid black;
+		width: 100%;
+		float:right;
+		padding:1em;
+		font-weight: bold;
+		margin:-1em 1em -1em -1em;
+	}*/
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="abb"> <table><tr valign="top">
+<td width="100%" height="100%" valign="top" style="padding: 0px; background-color: #ffffff;">
+ <p><img width="200" height="300" alt="" style="padding : 1em;" src="lib/NeuesElement7.png"></p>
+  </td> </div> <div class="leg">
+<td width="100%" height="100%" valign="top" style="padding: 0px; background-color: #eee;">
+
+<table>
+
+<tr width="100%" height="5%" valign="top" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 0px; background-color: #f2f2f2;"> <td width="20%" valign="top" style="border-color: #ffffff;"><p>X</p></td><td width="80%" valign="top"style="border-color: #ffffff;"><p>Versorgung externer Geräte 24 V DC</p></td></tr> 
+
+<tr width="100%" height="5%" valign="top" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 0px; background-color: #f2f2f2;"> <td width="20%" valign="top" style="border-color: #ffffff;"><p>X1</p></td><td width="80%" valign="top"style="border-color: #ffffff;"><p>Versorgung externer Geräte 230&nbsp;V</p></td></tr>
+
+<tr width="100%" height="5%" valign="top" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 0px; background-color: #f2f2f2;"> <td width="20%" valign="top" style="border-color: #ffffff;"><p>X2.1-X2.2</p></td><td width="80%" valign="top"style="border-color: #ffffff;"><p>Torsicherheitsschalter</p></td></tr>
+
+<tr width="100%" height="5%" valign="top" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; background-color: #f2f2f2;"> <td width="20%" valign="top" style="border-color: #ffffff;"><p>X2.3-X2.4</p></td><td width="80%" valign="top"style="border-color: #ffffff;"><p>Eingang für externe Schaltleistenauswertung</p></td></tr>
+
+<tr width="100%" height="5%" valign="top" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 1px; background-color: #f2f2f2;"> <td width="20%" valign="top" style="border-color: #ffffff;"><p>X3</p></td><td width="80%" valign="top"style="border-color: #ffffff;"><p>Not-HALT</p></td></tr>
+
+<tr width="100%" height="10%" valign="top" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; background-color: #f2f2f2;"> <td width="20%" valign="top" style="border-color: #ffffff;"><p>X5</p></td><td width="80%" valign="top"style="border-color: #ffffff;"><p>Eingang für externe Befehlsgeräte</p></td></tr>
+
+<tr width="100%" height="10%" valign="top" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; background-color: #f2f2f2;"> <td width="20%" valign="top" style="border-color: #ffffff;"><p>X6</p></td><td width="80%" valign="top"style="border-color: #ffffff;"><p>Eingang für Lichtschranken</p></td></tr>
+
+<tr width="100%" height="10%" valign="top" style="border-width : 1px; border-color: #ffffff; border-style: solid; padding: 0px 7px; background-color: #f2f2f2;"> <td width="20%" valign="top" style="border-color: #ffffff;"><p>X7</p></td><td width="80%" valign="top"style="border-color: #ffffff;"><p>Eingang für Funkempfänger / Zugtaster</p></td></tr>
+</div>
+</table>
+
+</td></table>
+
+
+</body>
+
+</html>
